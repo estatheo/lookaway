@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1430"/>
+      <stop offset="1" stop-color="#0d0b16"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a874ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#a874ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d9c4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <!-- warning stripes along the bottom -->
+  <g opacity="0.22">
+    <clipPath id="band"><rect x="0" y="372" width="1200" height="48" rx="0"/></clipPath>
+    <g clip-path="url(#band)" fill="#f0c45c">
+      <path d="M0 420 L48 372 L80 372 L32 420 Z"/><path d="M96 420 L144 372 L176 372 L128 420 Z"/>
+      <path d="M192 420 L240 372 L272 372 L224 420 Z"/><path d="M288 420 L336 372 L368 372 L320 420 Z"/>
+      <path d="M384 420 L432 372 L464 372 L416 420 Z"/><path d="M480 420 L528 372 L560 372 L512 420 Z"/>
+      <path d="M576 420 L624 372 L656 372 L608 420 Z"/><path d="M672 420 L720 372 L752 372 L704 420 Z"/>
+      <path d="M768 420 L816 372 L848 372 L800 420 Z"/><path d="M864 420 L912 372 L944 372 L896 420 Z"/>
+      <path d="M960 420 L1008 372 L1040 372 L992 420 Z"/><path d="M1056 420 L1104 372 L1136 372 L1088 420 Z"/>
+      <path d="M1152 420 L1200 372 L1232 372 L1184 420 Z"/>
+    </g>
+  </g>
+  <!-- the eye -->
+  <circle cx="250" cy="196" r="170" fill="url(#glow)"/>
+  <path d="M110 196 Q250 66 390 196 Q250 326 110 196 Z" fill="#f6f2ff"/>
+  <circle cx="250" cy="196" r="62" fill="#7a4fd6"/>
+  <circle cx="250" cy="196" r="34" fill="#160f26"/>
+  <!-- padlock as the pupil highlight -->
+  <rect x="236" y="190" width="28" height="22" rx="4" fill="#f0c45c"/>
+  <path d="M242 190 v-8 a8 8 0 0 1 16 0 v8" fill="none" stroke="#f0c45c" stroke-width="4"/>
+  <circle cx="226" cy="172" r="9" fill="#ffffff" opacity="0.8"/>
+  <!-- words -->
+  <text x="470" y="170" font-size="96" font-weight="800" fill="url(#title)" letter-spacing="-2">lookaway</text>
+  <text x="474" y="228" font-size="30" fill="#c9bde6">Walk away from your Mac. It notices.</text>
+  <text x="474" y="272" font-size="22" fill="#8f84ad">Face-aware lock · keyboard &amp; mouse block · a video for nosy hands</text>
+  <g font-size="18" font-weight="600">
+    <rect x="474" y="300" width="132" height="36" rx="18" fill="#2a2045" stroke="#5b4a8a"/>
+    <text x="540" y="324" text-anchor="middle" fill="#d9c4ff">macOS 14+</text>
+    <rect x="618" y="300" width="164" height="36" rx="18" fill="#2a2045" stroke="#5b4a8a"/>
+    <text x="700" y="324" text-anchor="middle" fill="#d9c4ff">100% on-device</text>
+    <rect x="794" y="300" width="150" height="36" rx="18" fill="#2a2045" stroke="#5b4a8a"/>
+    <text x="869" y="324" text-anchor="middle" fill="#d9c4ff">menu-bar app</text>
+  </g>
+</svg>

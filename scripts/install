@@ -1,0 +1,17 @@
+#!/bin/bash
+# Build, then install lookaway.app into ~/Applications and (re)launch it.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+./scripts/build
+
+DEST="$HOME/Applications"
+mkdir -p "$DEST"
+if pgrep -x lookaway >/dev/null 2>&1; then
+  osascript -e 'tell application id "local.gizmos.lookaway" to quit' >/dev/null 2>&1 || pkill -x lookaway || true
+  sleep 1
+fi
+rm -rf "$DEST/lookaway.app"
+cp -R build/lookaway.app "$DEST/lookaway.app"
+echo "Installed $DEST/lookaway.app"
+open "$DEST/lookaway.app"

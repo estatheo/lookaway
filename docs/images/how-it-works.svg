@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#8f84ad"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="300" rx="24" fill="#14101f"/>
+  <g font-size="17" fill="#e9e3f8" text-anchor="middle">
+    <!-- 1 -->
+    <rect x="30" y="60" width="200" height="150" rx="18" fill="#221a38" stroke="#4a3b75"/>
+    <text x="130" y="112" font-size="42">🚶</text>
+    <text x="130" y="150" font-weight="700">You walk away</text>
+    <text x="130" y="176" fill="#a99dc9" font-size="15">camera stops seeing</text>
+    <text x="130" y="196" fill="#a99dc9" font-size="15">your face</text>
+    <!-- 2 -->
+    <rect x="262" y="60" width="200" height="150" rx="18" fill="#221a38" stroke="#4a3b75"/>
+    <text x="362" y="112" font-size="42">⏱️</text>
+    <text x="362" y="150" font-weight="700">Grace period</text>
+    <text x="362" y="176" fill="#a99dc9" font-size="15">a few seconds,</text>
+    <text x="362" y="196" fill="#a99dc9" font-size="15">you choose how long</text>
+    <!-- 3 -->
+    <rect x="494" y="60" width="200" height="150" rx="18" fill="#221a38" stroke="#4a3b75"/>
+    <text x="594" y="112" font-size="42">🚫</text>
+    <text x="594" y="150" font-weight="700">Input blocked</text>
+    <text x="594" y="176" fill="#a99dc9" font-size="15">keyboard &amp; mouse</text>
+    <text x="594" y="196" fill="#a99dc9" font-size="15">do nothing</text>
+    <!-- 4 -->
+    <rect x="726" y="60" width="200" height="150" rx="18" fill="#2b1f48" stroke="#a874ff" stroke-width="2"/>
+    <text x="826" y="112" font-size="42">📺</text>
+    <text x="826" y="150" font-weight="700">Someone touches it</text>
+    <text x="826" y="176" fill="#d9c4ff" font-size="15">video plays mid-screen</text>
+    <text x="826" y="196" fill="#d9c4ff" font-size="15">at 40% volume</text>
+    <!-- 5 -->
+    <rect x="958" y="60" width="212" height="150" rx="18" fill="#1d2a22" stroke="#4f9a6b"/>
+    <text x="1064" y="112" font-size="42">👀</text>
+    <text x="1064" y="150" font-weight="700">You come back</text>
+    <text x="1064" y="176" fill="#9fd3b1" font-size="15">unblocked by your face,</text>
+    <text x="1064" y="196" fill="#9fd3b1" font-size="15">volume put back</text>
+  </g>
+  <g stroke="#8f84ad" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="232" y1="135" x2="258" y2="135"/>
+    <line x1="464" y1="135" x2="490" y2="135"/>
+    <line x1="696" y1="135" x2="722" y2="135"/>
+    <line x1="928" y1="135" x2="954" y2="135"/>
+  </g>
+  <text x="600" y="258" text-anchor="middle" font-size="16" fill="#8f84ad">Ctrl + Cmd + Q is always the way out to a real lock (Touch ID / password).</text>
+</svg>

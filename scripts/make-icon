@@ -1,0 +1,9 @@
+#!/bin/bash
+# Regenerate Resources/AppIcon.icns from scripts/make-icon.swift (CoreGraphics + iconutil).
+# The result is committed; run this only when the design changes.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+if [ -z "${DEVELOPER_DIR:-}" ] && [ -d /Applications/Xcode.app/Contents/Developer ]; then
+  export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+fi
+exec swift scripts/make-icon.swift Resources/AppIcon.icns
